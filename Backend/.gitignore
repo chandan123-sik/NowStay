@@ -1,0 +1,5 @@
+Backend/config/*.json
+Backend/config/ananya-hotel.json
+ananya-hotel.json
+.env
+node_modules
