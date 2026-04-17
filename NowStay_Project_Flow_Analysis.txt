@@ -1,0 +1,93 @@
+=================================================================
+             NOWSTAY HOTEL & SPA - COMPLETE PROJECT FLOW & ANALYSIS
+=================================================================
+
+# 1. ARCHITECTURE & TECH STACK OVERVIEW
+-----------------------------------------------------------------
+- Application Type: MERN Stack Web Application (MongoDB, Express.js, React.js, Node.js)
+- Build Tool: Vite
+- File Structure: Monorepo with separated `Frontend` and `Backend` directories.
+- Core Integrations:
+   * Razorpay (For secure payment processing)
+   * SMSIndiaHub (For OTP verification / Mobile Login)
+   * Cloudinary (For dynamic image storage and gallery management)
+   * jsPDF (For generating downloadable PDF Stay Vouchers)
+   * Firebase (For real-time push notifications across web & mobile views)
+
+# 2. USER PANEL (FRONTEND FLOW)
+-----------------------------------------------------------------
+The User Panel is designed to deliver a premium, luxury hotel booking experience.
+
+1. Authentication Flow:
+   - Users sign up or log in using their Mobile Number.
+   - Flow: Enter Mobile -> Request OTP -> Backend verifies via SMSIndiaHub -> User logs in.
+   - Upon registration, users provide Name, Email, and Location alongside the verified mobile number.
+
+2. Navigation & Static Pages:
+   - Home Page: Showcases "Hero Banner" (dynamic slides), "Featured Sanctuaries/Rooms", and "Guest Feedback".
+   - About Page: Information about NowStay's history and location (Indore).
+   - Contact Page: Displays the integrated Google Map of the property and allows users to submit inquiry messages (which go directly to the Admin Messages module).
+   - Policies: Terms & Conditions and Privacy policy which are dynamically rendered from the Admin settings.
+
+3. The Wallet System (Loyalty/Payments):
+   - Every user gets a digital wallet.
+   - Users can add funds to their wallet, making checkout faster.
+   - Admin can credit promotional money into user wallets.
+
+4. The Core "Booking Flow" (Multi-Step Wizard):
+   - Step 1 (Search & Select): User selects Arrival & Departure dates and specifies the number of Adults/Children. System dynamically filters available Room Variants (Sanctuaries).
+   - Step 2 (Rate Plans): User selects the meal configurations (e.g., EP - Room Only, CP - With Breakfast, MAP - Half Board) for the chosen room.
+   - Step 3 (Confirmation & Payment): 
+      * User reviews stay metrics.
+      * Promocodes/Vouchers can be applied here.
+      * User selects Payment mode: 'Wallet Payment', 'Complete Razorpay Payment', or 'Pay at Hotel' (Partial advance payment).
+   - Step 4 (Success & Voucher): Upon success, order is verified, and a dynamic PDF "Confirmed Stay Voucher" is generated detailing Check-In/Out times, Guest info, and Policies.
+
+5. User Dashboard (My Account):
+   - Profile Management: Update personal info.
+   - My Bookings: View all upcoming, completed, and cancelled bookings. Users can cancel pending bookings, which alerts the Admin. They can also redownload their PDF vouchers here.
+
+# 3. ADMIN PANEL (BACKEND CONTROL CENTER)
+-----------------------------------------------------------------
+The Admin Panel is the operational backbone for staff/management to control the platform.
+Login occurs via email/password (OTP is bypassed for Admin).
+
+1. Dashboard Overview:
+   - Provides live analytics (Total Revenue, Active Bookings, User Count, Available Inventory).
+
+2. Property & Asset Setup (`setup/` & `MediaMgmt`):
+   - Setup -> Property: Edit Hotel Name (NowStay), Address, Slogans, Check-in rules, and Contact emails.
+   - Setup -> TermsMgmt: Manage the Terms and Conditions text shown to users.
+   - Media Management: Upload property photos to Cloudinary. These photos feed into the Banners and Room descriptions on the frontend.
+
+3. Room & Inventory Operations:
+   - RoomMgmt: Define base Room Categories (e.g., Luxury Suite, Standard Room).
+   - VariantMgmt: Create specific variations of rooms (e.g., Sea View Suite, Balcony Room) attached to a base room. Assign photos and amenities.
+   - PricingMgmt: Create dynamic Pricing Plans. You can build combinations (e.g., Diwali Offer Premium, Basic Breakfast Plan) and attach baseline prices.
+   - ServiceMgmt: Define amenities (WiFi, Pool, Spa).
+   - Inventory Mgmt: Block specific dates, pause sales (Stop Sell), or mark rooms as "Sold Out" dynamically to stop user bookings immediately.
+
+4. Guest & Financial Management:
+   - Users Ledger: View all registered guests, their total bookings, and wallet balances. Admin can manually manage them or export data.
+   - Bookings Ledger: Track incoming bookings. Admin receives alerts when a new booking is made or cancelled. They can manually update statuses (Confirmed -> Completed -> Cancelled).
+   - Transactions Ledger: A transparent ledger tracking every rupee moving through Wallet or Razorpay.
+
+5. Marketing & Support:
+   - Discounts (Coupons): Admin generates Promo Codes (e.g., NOWSTAY-20) with percentage or flat discounts and expiry dates.
+   - Messages: A dedicated inbox where Admin can read user enquiries sent from the 'Contact Us' page.
+
+# 4. HOW THE SYSTEM INTERACTS (END-TO-END FLOW)
+-----------------------------------------------------------------
+SCENARIO: A guest books a room.
+
+1. Initialization: Admin sets up the Property, creates a "Royal Suite" (VariantMgmt), assigns a "Breakfast Included" plan (PricingMgmt), and makes it active.
+2. Browsing: User lands on NowStay frontend, sees the Royal Suite fetched dynamically from the database.
+3. Booking: User logs in via Mobile OTP. They select the dates. The system checks `Inventory` to ensure the Royal Suite is not sold out.
+4. Checkout: User enters the Promo Code created by Admin. The backend validates it and reduces the total. User selects 'Pay at Hotel' and pays a 20% deposit via Razorpay.
+5. Trigger: Razorpay confirms payment via Webhook/Callback -> Backend creates the `Booking` document -> Sends Push Notification to User & Admin.
+6. Execution: User sees the Success page and downloads their PDF Voucher. Admin sees the new active booking on their Dashboard and prepares for the guest's arrival. 
+7. Completion: Guest arrives, pays the rest, and Admin marks the booking as 'Completed' in the Bookings Ledger.
+
+=================================================================
+END OF DOCUMENTATION
+=================================================================

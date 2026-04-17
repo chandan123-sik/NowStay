@@ -36,10 +36,10 @@ const AdminLogin = () => {
             {/* Top Branding Section */}
             <div className="mb-8 flex flex-col items-center animate-in fade-in slide-in-from-top-8 duration-1000">
                 <div className="bg-slate-800/50 backdrop-blur-xl p-4 rounded-[1.8rem] border border-white/5 shadow-2xl mb-4">
-                    <img src="/logo.png" alt="Ananya Hotel" className="h-14 w-auto brightness-0 invert opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
+                    <img src="/logo.png" alt="NowStay" className="h-14 w-auto brightness-0 invert opacity-90 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
                 </div>
                 <div className="text-center space-y-0.5">
-                    <h2 className="text-2xl font-serif text-white tracking-widest uppercase">Ananya</h2>
+                    <h2 className="text-2xl font-serif text-white tracking-widest uppercase">NowStay</h2>
                     <div className="flex items-center gap-2">
                         <div className="h-[1px] w-6 bg-gradient-to-r from-transparent to-primary/50"></div>
                         <p className="text-[9px] font-bold text-primary tracking-[0.3em] uppercase">Management Portal</p>
@@ -86,7 +86,7 @@ const AdminLogin = () => {
                                     <input
                                         type="email" required value={email}
                                         onChange={e => setEmail(e.target.value)}
-                                        placeholder="admin@ananya.com"
+                                        placeholder="admin@nowstay.com"
                                         className="w-full bg-[#0C111D] border border-white/5 focus:border-primary/40 focus:ring-4 focus:ring-primary/5 text-[16px] sm:text-xs px-4 py-3 rounded-xl outline-none transition-all text-white font-medium placeholder:text-slate-700 shadow-inner"
                                     />
                                 </div>

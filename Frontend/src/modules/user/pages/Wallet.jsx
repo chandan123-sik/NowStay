@@ -33,7 +33,7 @@ const Wallet = () => {
                 key: import.meta.env.VITE_RAZORPAY_KEY_ID || 'rzp_test_8sYbzHWidwe5Zw',
                 amount: order.amount,
                 currency: order.currency,
-                name: "Ananya Hotel",
+                name: "NowStay",
                 description: "Wallet Recharge",
                 order_id: order.id,
                 handler: async (response) => {
@@ -84,7 +84,7 @@ const Wallet = () => {
         <div className="min-h-screen bg-slate-50 pb-6 md:pb-10">
             {/* Page Header */}
             <div className="bg-white border-b border-slate-50 px-4 py-4 shadow-sm sticky top-0 z-50">
-                <p className="text-[7px] font-bold text-primary uppercase tracking-[0.4em]">Hotel Ananya</p>
+                <p className="text-[7px] font-bold text-primary uppercase tracking-[0.4em]">NowStay</p>
                 <h1 className="text-sm font-serif text-secondary mt-0.5 uppercase tracking-widest">My <span className="text-primary italic">Wallet</span></h1>
             </div>
 
@@ -171,7 +171,7 @@ const Wallet = () => {
                     <div>
                         <p className="text-[8px] font-bold text-primary uppercase tracking-widest">Guest Milestone</p>
                         <p className="text-secondary text-[10px] font-medium mt-0.5 leading-relaxed tracking-tight">
-                            Maintain <span className="font-bold">₹5,000+</span> to unlock <span className="font-bold text-primary italic">Ananya Platinum</span> status!
+                            Maintain <span className="font-bold">₹5,000+</span> to unlock <span className="font-bold text-primary italic">NowStay Platinum</span> status!
                         </p>
                     </div>
                 </div>
@@ -201,7 +201,7 @@ const Wallet = () => {
                             <div className="py-14 text-center space-y-2">
                                 <CreditCard size={32} className="text-slate-200 mx-auto" />
                                 <p className="text-slate-400 text-sm font-medium">No transactions yet</p>
-                                <p className="text-slate-300 text-xs">Start your Ananya journey!</p>
+                                <p className="text-slate-300 text-xs">Start your NowStay journey!</p>
                             </div>
                         )}
                     </div>

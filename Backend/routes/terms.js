@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
             terms = await Terms.create({
                 lastUpdated: new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }),
                 sections: [
-                    { icon: 'FileText', title: 'Agreement to Terms', content: 'By accessing or using the Hotel Ananya platform, you agree to be bound by these Terms and Conditions and our Privacy Policy. If you do not agree, please do not use our services.' },
+                    { icon: 'FileText', title: 'Agreement to Terms', content: 'By accessing or using the NowStay platform, you agree to be bound by these Terms and Conditions and our Privacy Policy. If you do not agree, please do not use our services.' },
                     { icon: 'Users', title: 'User Obligations', content: 'Guests must provide accurate information during registration. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.' }
                 ]
             });

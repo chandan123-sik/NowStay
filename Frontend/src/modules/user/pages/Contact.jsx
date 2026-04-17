@@ -7,7 +7,7 @@ import { useAuth } from '../../../context/AuthContext';
 const contactInfo = [
     {
         icon: MapPin, label: 'Location',
-        lines: ['New Digha, West Bengal - 721428'],
+        lines: ['Indore, Madhya Pradesh - 452001'],
         action: { text: 'View on Maps', href: 'https://goo.gl/maps/Yrsjyiv6ivuG2Hko7' },
         color: 'text-rose-500 bg-rose-50'
     },
@@ -19,7 +19,7 @@ const contactInfo = [
     },
     {
         icon: Mail, label: 'Email',
-        lines: ['hello@ananyahotel.com'],
+        lines: ['hello@nowstay.com'],
         color: 'text-blue-500 bg-blue-50'
     },
     {
@@ -175,8 +175,8 @@ const Contact = () => {
                                 {/* Name Row */}
                                 <div className="grid grid-cols-2 gap-3">
                                     {[
-                                        { field: 'firstName', label: 'First Name', placeholder: 'Aryan' },
-                                        { field: 'lastName', label: 'Last Name', placeholder: 'Pathak' },
+                                        { field: 'firstName', label: 'First Name', placeholder: 'Chandan' },
+                                        { field: 'lastName', label: 'Last Name', placeholder: 'Sikarwar' },
                                     ].map(({ field, label, placeholder }) => (
                                         <div key={field} className="space-y-1.5">
                                             <label className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{label}</label>
@@ -250,7 +250,7 @@ const Contact = () => {
                 {/* Map */}
                 <div className="rounded-2xl overflow-hidden shadow-sm border border-slate-100 h-56">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.3533230635465!2d87.5029377!3d21.6214309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0327f2c8d23d8b%3A0x47e812d8a0c23945!2sAnanya%20Hotel!5e0!3m2!1sen!2sin!4v1657891234567"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.8999029001357!2d75.8649147751544!3d22.69476987940494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fce47dec0805%3A0x331b298a7dc1d08e!2sVijay%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452001!5e0!3m2!1sen!2sin!4v1776446581962!5m2!1sen!2sin"
                         className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700"
                         allowFullScreen loading="lazy"
                     />
@@ -260,11 +260,11 @@ const Contact = () => {
                 <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-5 flex items-center justify-between">
                     <div>
                         <p className="text-[9px] font-black text-primary uppercase tracking-widest">Follow Us</p>
-                        <p className="text-secondary font-bold text-sm mt-0.5">Stay connected with Ananya</p>
+                        <p className="text-secondary font-bold text-sm mt-0.5">Stay connected with NowStay</p>
                     </div>
                     <div className="flex gap-3">
                         {[
-                            { icon: Instagram, href: 'https://www.instagram.com/ananyahotelnewdigha?igsh=MThtOHBwdzh0cXd6MA==' },
+                            { icon: Instagram, href: 'https://www.instagram.com/nowstayindore?igsh=MThtOHBwdzh0cXd6MA==' },
                             { icon: Facebook, href: 'https://www.facebook.com/share/18MzGLcKVr/' },
                             { icon: Youtube, href: '#' }
                         ].map(({ icon: Icon, href }, i) => (

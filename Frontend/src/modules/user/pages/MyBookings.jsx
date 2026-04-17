@@ -139,15 +139,15 @@ const generateVoucherPDF = async (booking) => {
     // Header Branding
     pdf.setFontSize(24);
     pdf.setTextColor(15, 23, 42);
-    pdf.text('Ananya Hotel', w / 2, headerY + 5, { align: 'center' });
+    pdf.text('NowStay', w / 2, headerY + 5, { align: 'center' });
 
     pdf.setFontSize(8);
     pdf.setTextColor(100, 116, 139);
-    pdf.text('NEW DIGHA, WEST BENGAL  \u00b7  LUXURY SANCTUARY', w / 2, headerY + 11, { align: 'center' });
+    pdf.text('INDORE, MADHYA PRADESH  \u00b7  LUXURY SANCTUARY', w / 2, headerY + 11, { align: 'center' });
 
     pdf.setFontSize(7);
     pdf.setTextColor(148, 163, 184);
-    pdf.text('hello@ananyahotel.com  \u00b7  +91 74071 75567', w / 2, headerY + 16, { align: 'center' });
+    pdf.text('hello@nowstay.com  \u00b7  +91 74071 75567', w / 2, headerY + 16, { align: 'center' });
 
     // Status / Reference
     const divY = headerY + 22;
@@ -284,10 +284,10 @@ const generateVoucherPDF = async (booking) => {
 
     // Footer
     pdf.setFontSize(6);
-    pdf.text('Ananya Hotel \u00b7 New Digha \u00b7 Purba Medinipur \u00b7 West Bengal 721463', w / 2, 280, { align: 'center' });
+    pdf.text('NowStay \u00b7 Indore \u00b7 Madhya Pradesh 452001', w / 2, 280, { align: 'center' });
     pdf.text(`Digitally Generated on ${new Date().toLocaleString()}`, w / 2, 284, { align: 'center' });
 
-    pdf.save(`Ananya_Voucher_${booking.bookingId}.pdf`);
+    pdf.save(`NowStay_Voucher_${booking.bookingId}.pdf`);
 };
 
 const MyBookings = () => {

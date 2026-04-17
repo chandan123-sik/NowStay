@@ -11,13 +11,13 @@ const seedAdmin = async () => {
 
         // Create or update admin
         const adminData = {
-            name: 'Hotel Ananya Admin',
+            name: 'NowStay Admin',
             email: 'a@gmail.com',
             password: '1234',
             role: 'admin',
-            mobile: '9669002380',
+            mobile: '9575500329', 
             country: 'India',
-            city: 'Digha',
+            city: 'Indore',
             isVerified: true,
             walletBalance: 0
         };

@@ -72,9 +72,9 @@ const Login = () => {
             <div className="w-full max-w-md">
                 {/* Brand Logo */}
                 <div className="flex flex-col items-center mb-10 animate-in fade-in slide-in-from-top-6 duration-700">
-                    <img src="/logo.png" alt="Ananya Hotel" className="h-20 w-auto drop-shadow-2xl" />
+                    <img src="/logo.png" alt="NowStay" className="h-20 w-auto drop-shadow-2xl" />
                     <div className="mt-2 text-center">
-                        <p className="text-[10px] font-black tracking-[0.6em] text-secondary uppercase">Ananya</p>
+                        <p className="text-[10px] font-black tracking-[0.6em] text-secondary uppercase">NowStay</p>
                         <p className="text-[7px] font-bold text-primary tracking-[0.3em] uppercase opacity-60">Hotel & Spa</p>
                     </div>
                 </div>

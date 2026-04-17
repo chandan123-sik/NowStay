@@ -59,7 +59,7 @@ const Property = () => {
             <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                 <div>
                     <h1 className="text-xl lg:text-3xl font-black text-secondary lowercase capitalize tracking-tight leading-none mb-1">Property Aesthetics & <span className="text-primary italic">Identity</span></h1>
-                    <p className="text-[10px] lg:text-xs text-slate-400 font-medium tracking-tight mt-1">Control the global settings and visual identity of Hotel Ananya.</p>
+                    <p className="text-[10px] lg:text-xs text-slate-400 font-medium tracking-tight mt-1">Control the global settings and visual identity of NowStay.</p>
                 </div>
                 <button
                     onClick={handleSave}
@@ -108,7 +108,7 @@ const Property = () => {
                                         value={property.name}
                                         onChange={e => setProperty({ ...property, name: e.target.value })}
                                         className="w-full bg-slate-50 border border-slate-100 rounded-xl sm:rounded-2xl px-5 sm:px-6 py-3.5 sm:py-4.5 font-bold text-secondary outline-none focus:ring-2 focus:ring-primary/20 transition-all font-serif italic text-base sm:text-xl shadow-inner placeholder:opacity-30"
-                                        placeholder="e.g. Hotel Ananya"
+                                        placeholder="e.g. NowStay"
                                     />
                                 </div>
                                 <div className="space-y-2">
@@ -148,9 +148,9 @@ const Property = () => {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                             {[
-                                { icon: Globe, label: 'Official Website', field: 'website', placeholder: 'www.hotelananya.com' },
+                                { icon: Globe, label: 'Official Website', field: 'website', placeholder: 'www.nowstay.com' },
                                 { icon: Phone, label: 'Reservations Desk', field: 'phone', placeholder: '+91 000 000 0000' },
-                                { icon: Mail, label: 'Concierge Email', field: 'email', placeholder: 'stay@hotelananya.com' },
+                                { icon: Mail, label: 'Concierge Email', field: 'email', placeholder: 'stay@nowstay.com' },
                                 { icon: MapPin, label: 'Physical GPS', field: 'address', placeholder: 'Enter physical location' },
                             ].map((item, i) => (
                                 <div key={i} className="flex flex-col gap-2.5 p-4 lg:p-5 bg-slate-50 rounded-xl lg:rounded-2xl border border-dotted border-slate-200 hover:border-primary/30 transition-colors group/item">

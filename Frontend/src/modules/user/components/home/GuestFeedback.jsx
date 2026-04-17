@@ -3,7 +3,7 @@ import { Star } from 'lucide-react';
 
 const reviews = [
     { name: 'Rohan Sharma', text: 'An absolute sanctuary. The coastal views and the service redefined luxury for us.', rating: 5 },
-    { name: 'Aditya Gupta', text: 'The Azure Spa experience was transformative. A must-visit destination in Digha.', rating: 5 },
+    { name: 'Aditya Gupta', text: 'The Azure Spa experience was transformative. A must-visit destination in Indore.', rating: 5 },
     { name: 'Sneha Kapur', text: 'Elegant, modern, and deeply cultural. The attention to detail is simply world-class.', rating: 4 }
 ];
 

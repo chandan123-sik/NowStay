@@ -202,7 +202,7 @@ const Profile = () => {
                     <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-8 -mt-8" />
                     <div className="relative z-10 flex items-center justify-between">
                         <div>
-                            <p className="text-[7px] font-bold text-primary uppercase tracking-widest">Ananya Loyalty</p>
+                            <p className="text-[7px] font-bold text-primary uppercase tracking-widest">NowStay Loyalty</p>
                             <p className="text-secondary font-serif text-sm mt-0.5 lowercase capitalize">Gold Tier Member</p>
                         </div>
                     </div>

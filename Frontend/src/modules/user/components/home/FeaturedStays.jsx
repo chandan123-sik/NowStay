@@ -28,8 +28,8 @@ const FeaturedStays = () => {
 
     const handleShare = (room) => {
         const shareData = {
-            title: `Hotel Ananya - ${room.type}`,
-            text: `Check out this amazing ${room.type} at Hotel Ananya!`,
+            title: `NowStay - ${room.type}`,
+            text: `Check out this amazing ${room.type} at NowStay!`,
             url: window.location.origin + '/rooms'
         };
 

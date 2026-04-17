@@ -303,7 +303,7 @@ const BookingFlow = () => {
                 key: import.meta.env.VITE_RAZORPAY_KEY_ID,
                 amount: order.amount,
                 currency: order.currency,
-                name: 'Hotel Ananya',
+                name: 'NowStay',
                 description: `${selectedVariant?.name}: ${selectedPlan?.planName}`,
                 order_id: order.id,
                 handler: async (response) => {
@@ -363,7 +363,7 @@ const BookingFlow = () => {
                     <div className="w-9" /> // Spacer to keep title centered when back button is hidden
                 )}
                 <div className="flex flex-col items-center">
-                    <span className="text-[8px] font-bold text-primary uppercase tracking-[0.3em]">Hotel Ananya</span>
+                    <span className="text-[8px] font-bold text-primary uppercase tracking-[0.3em]">NowStay</span>
                     <h2 className="text-[11px] font-bold text-secondary uppercase tracking-[0.2em]">
                         {step === 1 ? 'Select Variant' : step === 2 ? 'Choose Plan' : step === 3 ? 'Finalize' : 'Confirm'}
                     </h2>
@@ -895,9 +895,9 @@ const BookingFlow = () => {
                                         hY += 37;
                                     }
 
-                                    pdf.setFontSize(24); pdf.setTextColor(15, 23, 42); pdf.text('Ananya Hotel', w / 2, hY + 5, { align: 'center' });
-                                    pdf.setFontSize(8); pdf.setTextColor(100, 116, 139); pdf.text('NEW DIGHA, WEST BENGAL  \u00b7  LUXURY SANCTUARY', w / 2, hY + 11, { align: 'center' });
-                                    pdf.setFontSize(7); pdf.setTextColor(148, 163, 184); pdf.text('hello@ananyahotel.com  \u00b7  +91 74071 75567', w / 2, hY + 16, { align: 'center' });
+                                    pdf.setFontSize(24); pdf.setTextColor(15, 23, 42); pdf.text('NowStay', w / 2, hY + 5, { align: 'center' });
+                                    pdf.setFontSize(8); pdf.setTextColor(100, 116, 139); pdf.text('INDORE, MADHYA PRADESH  \u00b7  LUXURY SANCTUARY', w / 2, hY + 11, { align: 'center' });
+                                    pdf.setFontSize(7); pdf.setTextColor(148, 163, 184); pdf.text('hello@nowstay.com  \u00b7  +91 74071 75567', w / 2, hY + 16, { align: 'center' });
 
                                     const divY = hY + 22;
                                     pdf.setDrawColor(226, 232, 240); pdf.line(20, divY, w - 20, divY);
@@ -960,9 +960,9 @@ const BookingFlow = () => {
                                     pdf.setFontSize(6); pdf.setTextColor(148, 163, 184); pdf.text('AUTHORISED SIGNATORY', 20, y + 4);
 
                                     pdf.setFontSize(6);
-                                    pdf.text('Ananya Hotel \u00b7 New Digha \u00b7 Purba Medinipur \u00b7 West Bengal 721463', w / 2, 280, { align: 'center' });
+                                    pdf.text('NowStay \u00b7 Indore \u00b7 Madhya Pradesh 452001', w / 2, 280, { align: 'center' });
                                     pdf.text(`Digitally Generated on ${new Date().toLocaleString()}`, w / 2, 284, { align: 'center' });
-                                    pdf.save(`Ananya_Voucher_${bookingId}.pdf`);
+                                    pdf.save(`NowStay_Voucher_${bookingId}.pdf`);
                                 }}
                                 className="flex-1 bg-emerald-600 text-white py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] shadow-xl shadow-emerald-500/20 hover:bg-emerald-700 transition-all active:scale-95 flex items-center justify-center gap-2"
                             >

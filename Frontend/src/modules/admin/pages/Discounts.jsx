@@ -82,7 +82,7 @@ const Discounts = () => {
                                 <label className="text-[10px] font-black uppercase text-slate-400 tracking-widest ml-1">Activation Code</label>
                                 <input required value={newCoupon.code} onChange={e => setNewCoupon({ ...newCoupon, code: e.target.value.toUpperCase() })}
                                     className="w-full bg-slate-50 border border-slate-100 rounded-xl lg:rounded-2xl px-5 py-3 lg:py-4 text-xs font-black tracking-[0.2em] outline-none focus:ring-2 focus:ring-primary/20 transition-all uppercase shadow-inner"
-                                    placeholder="ANANYA-2026" />
+                                    placeholder="NOWSTAY-2026" />
                             </div>
                             <div className="grid grid-cols-2 gap-4">
                                 <div className="space-y-1.5">

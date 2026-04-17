@@ -126,7 +126,7 @@ const Transactions = () => {
                                             {t._id?.slice(-6)}
                                         </td>
                                         <td className="px-4 lg:px-6 py-4 lg:py-6 font-black text-secondary text-[10px] lg:text-xs">
-                                            {t.description?.includes('Portal') ? 'Hotel Ananya Admin' : (t.user?.name || 'Unknown Party')}
+                                            {t.description?.includes('Portal') ? 'NowStay Admin' : (t.user?.name || 'Unknown Party')}
                                         </td>
                                         <td className="px-4 lg:px-6 py-4 lg:py-6 text-center">
                                             <div className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[7px] lg:text-[8px] font-black uppercase tracking-widest border transition-all ${t.type === 'credit' ? 'bg-emerald-50/50 text-emerald-600 border-emerald-100' : 'bg-rose-50/50 text-rose-600 border-rose-100'

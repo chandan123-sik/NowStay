@@ -54,7 +54,7 @@ export const AuthProvider = ({ children }) => {
             const parsed = JSON.parse(savedUser);
             if (parsed.wishlist) setWishlist(parsed.wishlist);
         } else {
-            const savedWishlist = localStorage.getItem('ananya_wishlist');
+            const savedWishlist = localStorage.getItem('nowstay_wishlist');
             if (savedWishlist) {
                 try { setWishlist(JSON.parse(savedWishlist)); } catch (e) { console.error('Wishlist load failed'); }
             }
@@ -66,7 +66,7 @@ export const AuthProvider = ({ children }) => {
     const toggleWishlist = (idx) => {
         setWishlist(prev => {
             const next = prev.includes(idx) ? prev.filter(i => i !== idx) : [...prev, idx];
-            localStorage.setItem('ananya_wishlist', JSON.stringify(next));
+            localStorage.setItem('nowstay_wishlist', JSON.stringify(next));
 
             // CROSS-DEVICE SYNC: Update backend if user is logged in
             if (user?._id) {

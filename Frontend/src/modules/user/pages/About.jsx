@@ -12,7 +12,7 @@ const stats = [
 const highlights = [
     {
         icon: Waves, title: 'Beachside Location',
-        desc: "Just a 2-minute walk to New Digha's pristine coastline. Wake up to the sound of the ocean.",
+        desc: "Just a 2-minute walk to Indore's pristine coastline. Wake up to the sound of the ocean.",
         color: 'text-cyan-500 bg-cyan-50'
     },
     {
@@ -33,10 +33,10 @@ const highlights = [
 ];
 
 const timeline = [
-    { year: '2008', event: 'Hotel Ananya founded in New Digha, West Bengal.' },
+    { year: '2008', event: 'NowStay founded in Indore, Madhya Pradesh.' },
     { year: '2013', event: 'Expanded to 46 rooms, added rooftop dining & poolside lounge.' },
     { year: '2018', event: 'Received "Best Boutique Hotel" recognition in Eastern India.' },
-    { year: '2024', event: 'Launched Ananya Digital — app-based booking & wallet system.' },
+    { year: '2024', event: 'Launched NowStay Digital — app-based booking & wallet system.' },
     { year: '2026', event: 'Continuing to redefine coastal luxury for a new generation.' },
 ];
 
@@ -59,14 +59,14 @@ const About = () => {
                 <div className="relative z-10 px-6 pt-8 pb-1 max-w-3xl mx-auto">
                     <span className="text-primary text-[8px] font-black uppercase tracking-[0.5em]">Our Heritage</span>
                     <h1 className="text-3xl font-serif text-white mt-2 lowercase leading-tight">
-                        Welcome to <span className="text-primary italic">Ananya Hotel.</span>
+                        Welcome to <span className="text-primary italic">NowStay.</span>
                     </h1>
                     <p className="text-white/55 text-sm mt-4 font-light leading-relaxed max-w-md">
-                        Located just behind the first plot of sea line in New Digha — a haven for travelers seeking comfort, peace, and the sound of the ocean.
+                        Located just behind the first plot of sea line in Indore — a haven for travelers seeking comfort, peace, and the sound of the ocean.
                     </p>
                     <div className="flex items-center gap-2 mt-5">
                         <MapPin size={12} className="text-primary" />
-                        <span className="text-white/40 text-[9px] font-bold uppercase tracking-widest">New Digha, West Bengal - 721428</span>
+                        <span className="text-white/40 text-[9px] font-bold uppercase tracking-widest">Indore, Madhya Pradesh - 452001</span>
                     </div>
                 </div>
             </div>
@@ -88,7 +88,7 @@ const About = () => {
                         <img
                             src="https://images.unsplash.com/photo-1545665277-5937489579f2?auto=format&fit=crop&w=800&q=80"
                             className="w-full h-full object-cover"
-                            alt="Hotel Ananya"
+                            alt="NowStay"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-secondary/70 to-transparent" />
                         <div className="absolute bottom-4 left-5">
@@ -98,7 +98,7 @@ const About = () => {
                     </div>
                     <div className="p-6">
                         <p className="text-slate-500 text-sm leading-relaxed font-light">
-                            An ideal choice for friends, families & couples to relax and unwind. Give yourself a chance to get close to nature and experience the cool sea breeze. Our proximity to the beach — just a 2-minute walk — makes us one of the most sought-after staycations in New Digha.
+                            An ideal choice for friends, families & couples to relax and unwind. Give yourself a chance to get close to nature and experience the cool sea breeze. Our proximity to the beach — just a 2-minute walk — makes us one of the most sought-after staycations in Indore.
                         </p>
                         <p className="text-slate-500 text-sm leading-relaxed font-light mt-4">
                             We offer a perfect blend of modern amenities and traditional hospitality, ensuring every guest feels at home while experiencing the finest coastal luxury.
@@ -178,7 +178,7 @@ const About = () => {
                 {/* Team / Values */}
                 <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
                     <h2 className="text-[9px] font-black text-slate-400 uppercase tracking-widest mb-4 flex items-center gap-2">
-                        <Users size={14} className="text-primary" /> Why Choose Ananya
+                        <Users size={14} className="text-primary" /> Why Choose NowStay
                     </h2>
                     <div className="space-y-3">
                         {[

@@ -64,7 +64,7 @@ const Terms = () => {
                 <div className="bg-white rounded-[2.5rem] shadow-2xl shadow-slate-200 border border-slate-100 p-8 lg:p-16">
                     <div className="prose prose-slate max-w-none">
                         <p className="text-slate-500 leading-relaxed text-sm lg:text-base italic mb-12 border-l-4 border-primary/20 pl-6">
-                            Welcome to Hotel Ananya. Our terms are designed to ensure a safe, secure, and premium experience for all guests. Please read these transmissions carefully before engaging with our digital node.
+                            Welcome to NowStay. Our terms are designed to ensure a safe, secure, and premium experience for all guests. Please read these transmissions carefully before engaging with our digital node.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
@@ -90,7 +90,7 @@ const Terms = () => {
                             <h4 className="text-secondary font-black text-xs uppercase tracking-[0.3em] mb-4">Contact for Legal Inquiries</h4>
                             <p className="text-slate-400 text-xs font-medium">
                                 If you have questions regarding these protocols, please synchronize with our administration at:
-                                <span className="text-primary font-bold ml-2 underline">legal@ananyahotel.com</span>
+                                <span className="text-primary font-bold ml-2 underline">legal@nowstay.com</span>
                             </p>
                         </div>
                     </div>

@@ -70,7 +70,7 @@ const HeroBanner = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-r from-secondary via-secondary/40 to-transparent"></div>
                         <div className="absolute inset-y-0 left-0 w-full p-6 flex flex-col justify-center space-y-1.5 z-10">
-                            <div className="inline-block bg-primary/20 backdrop-blur-sm text-primary text-[6px] font-bold px-1.5 py-0.5 rounded-[2px] w-fit uppercase tracking-widest border border-primary/20">{slide.type || 'Ananya'}</div>
+                            <div className="inline-block bg-primary/20 backdrop-blur-sm text-primary text-[6px] font-bold px-1.5 py-0.5 rounded-[2px] w-fit uppercase tracking-widest border border-primary/20">{slide.type || 'NowStay'}</div>
                             <h2 className="text-white font-serif text-lg leading-tight lowercase max-w-[200px]">
                                 {slide.title.split(' ').map((word, i) => (
                                     i % 2 !== 0 ? <span key={i} className="text-primary italic"> {word} </span> : word + ' '

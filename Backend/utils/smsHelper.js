@@ -19,8 +19,8 @@ export const sendOTP = async (mobile, otp) => {
     }
 
     try {
-        // Template: Welcome to the Ananya Hotel powered by SMSINDIAHUB. Your OTP for registration is ${otp}
-        const message = `Welcome to the Ananya Hotel powered by SMSINDIAHUB. Your OTP for registration is ${otp}`;
+        // Template: Welcome to the NowStay powered by SMSINDIAHUB. Your OTP for registration is ${otp}
+        const message = `Welcome to the NowStay powered by SMSINDIAHUB. Your OTP for registration is ${otp}`;
 
         // Official Transactional API URL
         const url = `http://cloud.smsindiahub.in/vendorsms/pushsms.aspx`;

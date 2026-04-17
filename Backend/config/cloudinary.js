@@ -17,10 +17,10 @@ const upload = multer({ storage });
 
 const uploadToCloudinary = (buffer, folder = 'media') => {
     return new Promise((resolve, reject) => {
-        console.log(`Starting Cloudinary stream upload to folder: hotel_ananya/${folder}`);
+        console.log(`Starting Cloudinary stream upload to folder: nowstay/${folder}`);
         const uploadStream = cloudinary.uploader.upload_stream(
             {
-                folder: `hotel_ananya/${folder}`,
+                folder: `nowstay/${folder}`,
                 // Removed strict allowed_formats to avoid case-sensitivity issues
             },
             (error, result) => {

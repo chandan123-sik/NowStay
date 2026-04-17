@@ -235,7 +235,7 @@ const Signup = () => {
             const identifier = formData.email ? formData.email : formData.mobile;
             const result = await verifyOtp(identifier, otp);
             if (result.success) {
-                toast.success("Welcome to Hotel Ananya!", toastCfg);
+                toast.success("Welcome to NowStay!", toastCfg);
                 sessionStorage.removeItem('signup_progress'); // Clear on success
                 navigate('/');
             } else {
@@ -258,7 +258,7 @@ const Signup = () => {
                                 <User size={10} className="text-primary" /> Full Name
                             </label>
                             <input type="text" name="name" required value={formData.name} onChange={handleChange}
-                                placeholder="e.g. Aryan Pathak"
+                                placeholder="e.g. Chandan Sikarwar"
                                 className="w-full bg-slate-50 border border-slate-200 focus:border-primary focus:bg-white text-sm px-4 py-3.5 rounded-xl outline-none transition-all text-secondary font-medium"
                             />
                         </div>
@@ -346,7 +346,7 @@ const Signup = () => {
                                 <MapPin size={10} className="text-primary" /> City
                             </label>
                             <input type="text" name="city" required value={formData.city} onChange={handleChange}
-                                placeholder="e.g. Digha"
+                                placeholder="e.g. Indore"
                                 className="w-full bg-slate-50 border border-slate-200 focus:border-primary focus:bg-white text-sm px-4 py-3.5 rounded-xl outline-none transition-all text-secondary font-medium"
                             />
                         </div>
@@ -431,7 +431,7 @@ const Signup = () => {
                         <label className="flex items-start gap-3 p-3 bg-slate-50 rounded-xl cursor-pointer hover:bg-slate-100 transition-colors">
                             <input type="checkbox" name="termsAccepted" checked={formData.termsAccepted} onChange={handleChange} className="mt-1 accent-primary w-4 h-4" />
                             <span className="text-[10px] text-slate-500 leading-relaxed">
-                                I accept the <Link to="/terms" target="_blank" className="text-primary font-bold underline">Terms & Conditions</Link> and privacy policy of Hotel Ananya.
+                                I accept the <Link to="/terms" target="_blank" className="text-primary font-bold underline">Terms & Conditions</Link> and privacy policy of NowStay.
                             </span>
                         </label>
 
@@ -513,9 +513,9 @@ const Signup = () => {
         <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center px-4 py-12">
             <div className="w-full max-w-md">
                 <div className="flex flex-col items-center mb-10 transition-all duration-700 animate-in fade-in slide-in-from-top-6">
-                    <img src="/logo.png" alt="Ananya Hotel" className="h-20 w-auto drop-shadow-2xl" />
+                    <img src="/logo.png" alt="NowStay" className="h-20 w-auto drop-shadow-2xl" />
                     <div className="mt-2 text-center">
-                        <p className="text-[10px] font-black tracking-[0.6em] text-secondary uppercase">Ananya</p>
+                        <p className="text-[10px] font-black tracking-[0.6em] text-secondary uppercase">NowStay</p>
                         <p className="text-[7px] font-bold text-primary tracking-[0.3em] uppercase opacity-60">Hotel & Spa</p>
                     </div>
                 </div>

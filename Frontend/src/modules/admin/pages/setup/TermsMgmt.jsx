@@ -90,7 +90,7 @@ const TermsMgmt = () => {
             <header className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
                 <div>
                     <h1 className="text-xl lg:text-3xl font-black text-secondary lowercase capitalize tracking-tight leading-none mb-1">Legal <span className="text-primary italic">Protocols</span></h1>
-                    <p className="text-[10px] lg:text-xs text-slate-400 font-medium tracking-tight mt-1">Configure the terms and conditions governing the Ananya platform.</p>
+                    <p className="text-[10px] lg:text-xs text-slate-400 font-medium tracking-tight mt-1">Configure the terms and conditions governing the NowStay platform.</p>
                 </div>
                 <div className="flex gap-3">
                     <button type="button" onClick={handleAdd} className="px-6 py-3 bg-white border border-slate-900 text-secondary rounded-xl text-[10px] font-black uppercase tracking-widest hover:bg-slate-50 transition-all flex items-center gap-2">

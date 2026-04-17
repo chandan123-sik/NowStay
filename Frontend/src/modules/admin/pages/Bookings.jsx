@@ -59,7 +59,7 @@ const Bookings = () => {
         const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.setAttribute("href", url);
-        link.setAttribute("download", `Ananya_Reservation_Ledger_${new Date().toISOString().split('T')[0]}.csv`);
+        link.setAttribute("download", `NowStay_Reservation_Ledger_${new Date().toISOString().split('T')[0]}.csv`);
         document.body.appendChild(link); link.click();
         document.body.removeChild(link);
         URL.revokeObjectURL(url);

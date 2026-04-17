@@ -74,7 +74,7 @@ const AdminLayout = () => {
                     >
                         <CloseIcon size={20} />
                     </button>
-                    <img src="/logo.png" alt="Ananya Hotel" className="h-10 w-auto brightness-0 invert mb-3" />
+                    <img src="/logo.png" alt="NowStay" className="h-10 w-auto brightness-0 invert mb-3" />
                     <div className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
                         <span className="text-[10px] uppercase font-black tracking-[0.4em] text-primary">Intelligence Portal</span>

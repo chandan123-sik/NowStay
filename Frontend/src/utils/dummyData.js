@@ -8,7 +8,7 @@ export const bookings = [
 export const users = [
     { id: 'U001', name: 'John Doe', email: 'john@example.com', role: 'user', joined: '2026-01-10', balance: 5000 },
     { id: 'U002', name: 'Sarah Wilson', email: 'sarah@example.com', role: 'user', joined: '2026-02-15', balance: 1200 },
-    { id: 'U003', name: 'Admin User', email: 'admin@ananyahotel.com', role: 'admin', joined: '2025-12-01', balance: 0 },
+    { id: 'U003', name: 'Admin User', email: 'admin@nowstay.com', role: 'admin', joined: '2025-12-01', balance: 0 },
 ];
 
 export const discountCodes = [

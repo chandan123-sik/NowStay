@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Import the service account key
-const serviceAccountPath = path.join(__dirname, '../config/ananya-hotel.json');
+const serviceAccountPath = path.join(__dirname, '../config/nowstay.json');
 
 try {
     if (!admin.apps.length) {

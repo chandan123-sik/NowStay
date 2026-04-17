@@ -66,12 +66,12 @@ export const setupForegroundListener = () => {
 
         // Show a standard browser notification when in foreground
         if (Notification.permission === 'granted') {
-            const notificationTitle = payload.notification?.title || 'Ananya Hotel';
+            const notificationTitle = payload.notification?.title || 'NowStay';
             const notificationOptions = {
                 body: payload.notification?.body || 'New message received',
                 icon: '/logo.png',
                 data: payload.data,
-                tag: 'hotel-ananya-sync',
+                tag: 'nowstay-sync',
                 renotify: true
             };
 

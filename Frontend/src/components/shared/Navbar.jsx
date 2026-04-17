@@ -40,7 +40,7 @@ const Navbar = () => {
                 <Link to="/" className="group flex items-center z-[70] relative">
                     <img
                         src="/logo.png"
-                        alt="Ananya Hotel"
+                        alt="NowStay"
                         className={`h-20 md:h-30 w-auto transition-all duration-500 object-contain ${!isNavbarDark && !isOpen ? 'brightness-0 invert' : ''}`}
                     />
                 </Link>

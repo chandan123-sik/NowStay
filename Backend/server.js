@@ -75,7 +75,7 @@ app.use('/api/fcm', fcmRoutes);
 
 // Basic Route
 app.get('/', (req, res) => {
-    res.send('Hotel Ananya API is running...');
+    res.send('NowStay API is running...');
 });
 
 // Error Handling Middleware
