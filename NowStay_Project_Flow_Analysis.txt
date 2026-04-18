@@ -88,6 +88,108 @@ SCENARIO: A guest books a room.
 6. Execution: User sees the Success page and downloads their PDF Voucher. Admin sees the new active booking on their Dashboard and prepares for the guest's arrival. 
 7. Completion: Guest arrives, pays the rest, and Admin marks the booking as 'Completed' in the Bookings Ledger.
 
+// User Flow :- 
+
+Website Visit → Home Page
+    ↓
+Hero Banner dekha (Admin ke uploaded banners)
+    ↓
+Quick Nav Tap — Dine / Dip / Care dekha
+(Admin ne jo services add ki hain wo dikhti hain)
+    ↓
+"Rooms" Navbar click kiya
+    ↓
+Rooms Page → Saare Room Types dikhte hain
+(Admin se: Name, Photo, Price, Amenities, Availability)
+    ↓
+Search / Filter kiya (Suite, Deluxe, etc.)
+    ↓
+"Explore Variants" click kiya
+    ↓
+BookingFlow Step 1 — Dates Select karo
+(Check-in / Check-out)
+    ↓
+System Check → Availability Board (Admin se)
+(Kya us date rooms hain? Stop Sell to nahi?)
+    ↓
+BookingFlow Step 2 — Variants + Rate Plans dikhte hain
+(Standard ₹2500 | Sea View ₹3500 — Yield Matrix se)
+    ↓
+EP / CP / MAP Plan choose karo
+(Admin ke Rate Plans)
+    ↓
+BookingFlow Step 3 — Guests count dalo
+(1 Adult / 2 Adults / Children)
+    ↓
+System price calculate karta hai
+(Base Price + Extra Guests + Taxes + Rate Plan)
+    ↓
+BookingFlow Step 4 — Payment
+(Wallet balance use karo + Partial/Full Pay — Admin setting se)
+    ↓
+Razorpay Gateway opens
+    ↓
+Payment Successful ✅
+    ↓
+PDF Voucher / Confirmation generate hoti hai
+    ↓
+Booking "My Bookings" page mein show hoti hai
+    ↓
+Admin ke "Bookings" section mein bhi entry aa jati hai
+    ↓
+✅ BOOKING COMPLETE!
+
+
+//  Admin Flow :-
+
+ADMIN LOGIN
+    ↓
+Setup → Property Info
+(Hotel name, address, phone, email, check-in/out time set karo)
+    ↓
+Setup → Payment Settings
+(Partial payment % set karo — e.g. 25% online, 75% at hotel)
+    ↓
+Setup → Rate Plans
+(EP / CP / MAP plans banao — konsa meal include hoga)
+    ↓
+Setup → Taxes & Charges
+(GST % aur extra charges set karo)
+    ↓
+Room Management → Room Type banao
+(Name, Size, Bed Type, Capacity, Photos, Amenities)
+    ↓
+Room Variant Management
+(Har Room Type ke andar variants banao — Standard, Sea View)
+    ↓
+Pricing Management
+(Har Variant ka base price set karo per Rate Plan)
+    ↓
+Inventory → Availability Board
+(Har date ke liye kitne rooms sell karne hain set karo)
+    ↓
+Inventory → Yield Matrix (Rates)
+(Har date ke liye price set karo — weekend mein zyada)
+    ↓
+Inventory → Bulk Update
+(Peak season ka data ek saath update karo)
+    ↓
+Services → Dine / Dip / Care items add karo
+(Menu items, Pool services, Spa packages)
+    ↓
+Discounts → Coupons banao
+(STAY10, LUXE20 — % ya fixed amount)
+    ↓
+Media → Hero Banners upload karo
+(Home page ke sliding banners)
+    ↓
+Media → Gallery photos upload karo
+    ↓
+Setup → Terms & Conditions likho
+    ↓
+✅ HOTEL LIVE — Users book kar sakte hain!
+
+
 =================================================================
 END OF DOCUMENTATION
 =================================================================
