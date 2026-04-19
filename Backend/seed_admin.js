@@ -15,7 +15,7 @@ const seedAdmin = async () => {
             email: 'a@gmail.com',
             password: '1234',
             role: 'admin',
-            mobile: '9575500329', 
+            mobile: '9009022251', 
             country: 'India',
             city: 'Indore',
             isVerified: true,
